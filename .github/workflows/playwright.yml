@@ -33,3 +33,5 @@ jobs:
           github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./playwright-report
           publish_branch: gh-pages
+      - name: Show report URL
+        run: echo "::notice::Playwright report is available at https://talbarlev.github.io/proj1/"
